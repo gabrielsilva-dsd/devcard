@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #070b09;
+    color: #e8fff0;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.pagina {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.cartao {
+    width: 100%;
+    max-width: 520px;
+    padding: 32px;
+
+    background-color: #0c1410;
+    border: 1px solid #245c3d;
+    border-radius: 16px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.terminal {
+    margin-bottom: 24px;
+    color: #46ee91;
+    font-size: 14px;
+}
+
+.avatar {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #14271c;
+    border: 1px solid #46ee91;
+    border-radius: 50%;
+
+    color: #46ee91;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.cargo {
+    margin-bottom: 18px;
+    color: #46ee91;
+}
+
+.descricao {
+    margin-bottom: 24px;
+    color: #b5c8bc;
+    line-height: 1.6;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.tecnologias span {
+    padding: 7px 12px;
+
+    background-color: #101f16;
+    border: 1px solid #295c40;
+    border-radius: 6px;
+
+    color: #d6ffe5;
+    font-size: 13px;
+}
+.links {
+    display: flex;
+    gap: 12px;
+}
+
+.links a {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid #46ee91;
+    border-radius: 6px;
+
+    color: #46ee91;
+    text-align: center;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.links a:hover {
+    background-color: #46ee91;
+    color: #071009;
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(70, 238, 145, 0.18);
+}
+
+.links a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+.terminal::after {
+    content: "_";
+    margin-left: 4px;
+    animation: piscar 0.8s infinite;
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .cartao {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}
