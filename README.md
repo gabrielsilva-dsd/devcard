@@ -5,6 +5,14 @@ Meu primeiro cartão profissional desenvolvido com HTML, CSS e JavaScript.
 O projeto apresenta minhas informações, tecnologias que estou estudando e links para meus perfis profissionais.
 
 ![Prévia do projeto DevCard](assets/preview.png)
+# DevCard
+
+Meu primeiro cartão profissional desenvolvido com HTML, CSS e JavaScript.
+
+O projeto apresenta minhas informações, tecnologias que estou estudando e links para meus perfis profissionais.
+## Projeto online
+
+Acesse: [DevCard](https://gabrielsilva-dsd.github.io/devcard/)
 ## Tecnologias utilizadas
 
 - HTML
